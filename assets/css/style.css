@@ -256,7 +256,7 @@ header {
     padding: 20px 0;
 }
 
-.gallery img {
+.gallery .col img {
     background-color: #ffffff;
     padding: 5px;
     width: 100%;
@@ -265,9 +265,15 @@ header {
     cursor: pointer;
 }
 
+#show-all-gallery img {
+    height: 35px;
+
+}
+
 #gallery-modal .modal-img {
     width: 100%;
 }
+
 
 /* Gallery end */
 
@@ -300,3 +306,48 @@ header {
 }
 
 /* Clients end */
+
+/* Contact start */
+
+#contact {
+    background-image: linear-gradient(315deg, rgba(5, 14, 52, 0.9) 0%, rgba(15, 96, 149, 0.9) 36%, rgba(29, 30, 31, 0.9) 100%), url("../img/bg1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#contact .title {
+    padding: 10px;
+    font-family: 'Roboto';
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: #eee;
+    padding-bottom: 30px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Contact end */
+
+/* footer start */
+footer {
+    height: 50px;
+    background-color: #464646;
+}
+
+/* footer end */

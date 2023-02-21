@@ -60,14 +60,14 @@
                 <div class="services-detail-inside">
                     <div class="title">Serviços</div>
                     <ul>
-                        <li><img src="assets/img/arrow.svg" alt="">Instalações</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Vistorias</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Indoor</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Limpeza e conservação</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Roof top</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Green field</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Construções</li>
-                        <li><img src="assets/img/arrow.svg" alt="">Instalações/Manutenção</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Instalações</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Vistorias</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Indoor</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Limpeza e conservação</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Roof top</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Green field</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Construções</li>
+                        <li><img src="assets/img/blue-arrow.svg" alt="">Instalações/Manutenção</li>
                     </ul>
                 </div>
             </div>
@@ -123,11 +123,17 @@
                 </div>
             </div>
         </div>
-
+        <div id="show-all-gallery" class="container d-flex justify-content-end align-items-center  mt-4">
+            <a class="h4 text-light text-decoration-none" href="#gallery">
+                <img class="teste" src="assets/img/white-arrow.svg" alt="">
+                <span>Ver galeria completa</span>
+            </a>
+        </div>
     </section>
 
+    <!-- section clients -->
     <section id="clients">
-        <div class="clients container">
+        <div class="clients container mt-4">
             <div class="title">Principais clientes</div>
             <!--  -->
             <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-3">
@@ -201,47 +207,61 @@
             </div>
         </div>
     </section>
+
+    <!-- section contact -->
     <section id="contact">
-        <div class="contact container">
-            <h1>Contact</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam, eius iste vel, tempora
-                temporibus, asperiores culpa ducimus ullam blanditiis excepturi numquam cumque quae vero? Culpa autem
-                esse corporis architecto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis assumenda est fugit officia
-                nam laboriosam labore iure, illum, fuga eveniet. Cumque libero aperiam eaque perspiciatis magni
-                consequuntur minus quibusdam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos quisquam magnam rem pariatur
-                maxime nisi modi, mollitia facere. At sed eligendi dolores tempore voluptates molestias corporis
-                voluptatem odit facilis.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam, eius iste vel, tempora
-                temporibus, asperiores culpa ducimus ullam blanditiis excepturi numquam cumque quae vero? Culpa autem
-                esse corporis architecto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis assumenda est fugit officia
-                nam laboriosam labore iure, illum, fuga eveniet. Cumque libero aperiam eaque perspiciatis magni
-                consequuntur minus quibusdam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos quisquam magnam rem pariatur
-                maxime nisi modi, mollitia facere. At sed eligendi dolores tempore voluptates molestias corporis
-                voluptatem odit facilis.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam, eius iste vel, tempora
-                temporibus, asperiores culpa ducimus ullam blanditiis excepturi numquam cumque quae vero? Culpa autem
-                esse corporis architecto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis assumenda est fugit officia
-                nam laboriosam labore iure, illum, fuga eveniet. Cumque libero aperiam eaque perspiciatis magni
-                consequuntur minus quibusdam!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos quisquam magnam rem pariatur
-                maxime nisi modi, mollitia facere. At sed eligendi dolores tempore voluptates molestias corporis
-                voluptatem odit facilis.
-            </p>
-        </div>
+        <div class="contact container mt-5 p-3">
+            <div class="title">Contato</div>
+            <div class="row row-cols-sm-1 row-cols-1 row-cols-md-1 row-cols-lg-2">
+                <div class="col">
+                    <form class="text-light">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome completo:</label>
+                            <input type="text" class="form-control" id="name" name="name" required autocomplete="off">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email" required
+                                autocomplete="off">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefone:</label>
+                            <input type="phone" class="form-control" id="phone" name="phone" required
+                                autocomplete="off">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required
+                                autocomplete="off"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col p-2">
+                    <div class="mapouter mb-5">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=seraphim banietti 1080&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
-    <footer></footer>
+    <footer class="d-flex align-items-center justify-content-center">
+        <span class="text-light">Ecotelecom - <span class="text-secondary">Serviços de manutenção</span></span>
+    </footer>
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/bootstrap@5.3.0-alpha1.js"></script>
+    <script src="assets/js/imask.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

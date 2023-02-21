@@ -51,3 +51,9 @@ document.addEventListener("click", function (e) {
         myModal.show();
     }
 })
+
+// imask
+var phoneMask = IMask(
+    document.getElementById('phone'), {
+    mask: '(00)0 0000-0000'
+});
