@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --height-header: 50px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* permite que o body não cubra o menu */
+    padding-top: 50px;
+}
+
+header {
+    height: 50px;
+    background: linear-gradient(90.18deg, #22A5EF 0%, #0A1ED8 73.96%, #00095F 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
+.header .logo img {
+    height: 40px;
+}
+
+/* navigation */
+#menu-list {
+    gap: 45px;
+    align-items: center;
+    margin: 0;
+}
+
+#menu-list li {
+    list-style: none;
+}
+
+#menu-list li a {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d6d6d6;
+    font-family: "Roboto";
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+#menu-list li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #e44862;
+    height: 3px;
+    width: 0;
+    bottom: -1px;
+    left: 0;
+    transition: 0.3s;
+}
+
+#menu-list li a:hover::after {
+    width: 100%;
+}
+
+#menu-list li a:hover {
+    color: #fff;
+}
+
+#menu-mobile {
+    top: var(--height-header);
+    right: 0;
+    gap: 10px;
+    text-align: right;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    list-style: none;
+}
+
+#menu-mobile li {
+    width: 100%;
+}
+
+#menu-mobile li a {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none;
+    padding-bottom: 0;
+    border-bottom: none;
+    padding: 10px;
+}
+
+/* menu */
+.menu {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-line {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+/* mostrar ou esconder o menu start*/
+.show-menu {
+    display: flex;
+    z-index: 2;
+    /* sobrepor menu ao resto do site */
+}
+
+.hide-menu {
+    display: none;
+}
+
+/* Banner */
+
+#banner {
+    background-image: linear-gradient(315deg, rgba(5, 14, 52, 0.7) 0%, rgba(15, 96, 149, 0.7) 36%, rgba(17, 181, 228, 0.7) 100%), url("../img/bg1.png");
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#banner .title {
+    display: flex;
+    justify-content: center;
+}
+
+#banner .text {
+    font-family: 'Roboto';
+    font-size: 2.8rem;
+    text-align: center;
+    color: #eeeeee;
+    text-shadow: 1px 1px 10px #333;
+    max-width: 500px;
+}
+
+#banner .buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#services .services {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services .services-detail {
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#services .title {
+    padding: 10px;
+    font-family: 'Roboto';
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    max-width: 500px;
+    color: #007AD2;
+}
+
+#services .services-detail-inside ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+}
+
+#services .services-detail-inside ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #007AD2;
+}
+
+#services .services-detail-inside ul li img {
+    height: 20px;
+    margin-right: 15px;
+}
+
+#services .services-banner {
+    background-image: url(../img/bg1.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    min-width: 300px;
+    box-shadow: 1px 1px 10px #bbb;
+}
+
+/* Gallery */
+
+#gallery .title {
+    padding: 10px;
+    font-family: 'Roboto';
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: #eee;
+    padding-bottom: 30px;
+}
+
+.gallery {
+    background: linear-gradient(180deg, #4CA4E4 0%, #093657 100%);
+    padding: 20px 0;
+}
+
+.gallery img {
+    background-color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+    width: 100%;
+}
+
+/* Gallery end */
+
+/* Clients */
+#clients .title {
+    padding: 10px;
+    font-family: 'Roboto';
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    color: #007AD2;
+    padding-bottom: 30px;
+}
+
+#clients img {
+    padding: 50px;
+}
+
+#clients .card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* Clients end */

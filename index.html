@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.5.3.0.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Ecotelecom</title>
+</head>
+
+<body>
+    <header>
+        <div class="header container">
+            <a class="logo" href="">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+
+            <nav>
+                <div class="menu">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <ul id="menu-list" class="show-menu">
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <ul id="menu-mobile" class="hide-menu">
+                    <li><a onclick="closeMenu()" href="#banner">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#gallery">Galeria</a></li>
+                    <li><a onclick="closeMenu()" href="#clients">Clientes</a></li>
+                    <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="banner container">
+            <div class="title">
+                <div class="text">
+                    Serviços de reparo e manutenção de qualidade
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#services" class="btn btn-primary">Serviços</a>
+                <a href="#gallery" class="btn btn-primary">Galeria</a>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services container">
+            <div class="services-detail col">
+                <div class="services-detail-inside">
+                    <div class="title">Serviços</div>
+                    <ul>
+                        <li><img src="assets/img/arrow.svg" alt="">Instalações</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Vistorias</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Indoor</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Limpeza e conservação</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Roof top</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Green field</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Construções</li>
+                        <li><img src="assets/img/arrow.svg" alt="">Instalações/Manutenção</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services-banner col">
+                <!-- background-image -->
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+
+        <div class="title">Galeria</div>
+
+        <div class="container-lg">
+            <div class="row gy-4 row-cols-2 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <img src="assets/media/gallery1.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery2.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery3.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery4.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery5.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery6.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery7.png" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="assets/media/gallery8.png" class="gallery-item" alt="gallery">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/1.jpg" class="modal-img" alt="modal img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="clients">
+        <div class="clients container">
+            <div class="title">Principais clientes</div>
+            <!--  -->
+            <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-3">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/logos/band.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">TV Band</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/logos/ericsson.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Ericsson</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/logos/huawei.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Huaway</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/logos/nokia.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Nokia</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/logos/radio_band.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Rádio Band</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/logos/siemens.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Siemens</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact container">
+            <h1>Contact</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam, eius iste vel, tempora
+                temporibus, asperiores culpa ducimus ullam blanditiis excepturi numquam cumque quae vero? Culpa autem
+                esse corporis architecto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis assumenda est fugit officia
+                nam laboriosam labore iure, illum, fuga eveniet. Cumque libero aperiam eaque perspiciatis magni
+                consequuntur minus quibusdam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos quisquam magnam rem pariatur
+                maxime nisi modi, mollitia facere. At sed eligendi dolores tempore voluptates molestias corporis
+                voluptatem odit facilis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam, eius iste vel, tempora
+                temporibus, asperiores culpa ducimus ullam blanditiis excepturi numquam cumque quae vero? Culpa autem
+                esse corporis architecto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis assumenda est fugit officia
+                nam laboriosam labore iure, illum, fuga eveniet. Cumque libero aperiam eaque perspiciatis magni
+                consequuntur minus quibusdam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos quisquam magnam rem pariatur
+                maxime nisi modi, mollitia facere. At sed eligendi dolores tempore voluptates molestias corporis
+                voluptatem odit facilis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quibusdam, eius iste vel, tempora
+                temporibus, asperiores culpa ducimus ullam blanditiis excepturi numquam cumque quae vero? Culpa autem
+                esse corporis architecto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis assumenda est fugit officia
+                nam laboriosam labore iure, illum, fuga eveniet. Cumque libero aperiam eaque perspiciatis magni
+                consequuntur minus quibusdam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos quisquam magnam rem pariatur
+                maxime nisi modi, mollitia facere. At sed eligendi dolores tempore voluptates molestias corporis
+                voluptatem odit facilis.
+            </p>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap@5.3.0-alpha1.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
