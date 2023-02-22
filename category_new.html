@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.5.3.0.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Ecotelecom</title>
+</head>
+
+<body>
+    <header>
+        <div class="header container">
+            <a class="logo" href="">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+
+            <nav>
+                <div class="menu">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <ul id="menu-list" class="show-menu">
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <ul id="menu-mobile" class="hide-menu">
+                    <li><a onclick="closeMenu()" href="#banner">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#gallery">Galeria</a></li>
+                    <li><a onclick="closeMenu()" href="#clients">Clientes</a></li>
+                    <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section new category start -->
+    <section id="category-new">
+        <div class="container">
+            <div class="">
+                <div class="h3 mt-3">
+                    Cadastro de categorias
+                </div>
+                <div class="text-end">
+                    <a href="#" class="btn btn-primary">Voltar</a>
+                </div>
+            </div>
+            <form action="#" method="post" class="row">
+                <div class="mb-3 col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                    <label for="category-name" class="form-label">Nova categoria</label>
+                    <input type="text" class="form-control" id="category-name" name="category-name">
+                </div>
+
+                <div class="">
+                    <button type="submit" class="btn btn-primary">Cadastrar categoria</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- section new category end -->
+
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap@5.3.0-alpha1.js"></script>
+    <script src="assets/js/imask.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
